@@ -1,0 +1,61 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  overflow: hidden;
+  position: relative;
+  max-width: 500px;
+}
+.slider_container {
+  display: flex;
+  transition: transform ease-out 500ms;
+}
+.slider_navigation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  inset: 0;
+  padding: 0px 1rem;
+}
+.slider_navigation svg {
+  background-color: #fff;
+  color: #111;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider_navigation svg:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.slider_status {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  inset: 90% 38% 4%;
+  padding: 0.2rem;
+  margin-bottom: 5%;
+  border-radius: 5rem;
+  background-color: #fff;
+}
+.slider_indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #444;
+  border: 1px solid #000;
+  margin-right: 0.5rem;
+}
+.slider_indicator--active {
+  width: 10px;
+  height: 10px;
+}
+.slider_indicator--inactive {
+  opacity: 0.4;
+}
